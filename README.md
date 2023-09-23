@@ -1,7 +1,6 @@
 # Avatar-Generation-from-Real-Images
 This repository is made up of GAN(Generative Adversarial Networks) which consists of Generator and Discriminator. They create new data instances that resemble your training data. Similarly
-here the real images gets trained and the avatar images gets generated. Before running the code, make sure you have the following dependencies installed: Python 3.x PyTorch NumPy Matplotlib. This repository contains a PyTorch implementation of a Generative Adversarial Network (GAN) for generating images from random noise.
-
+here the real images gets trained and the avatar images gets generated. This repository contains a PyTorch implementation of a Generative Adversarial Network (GAN) for generating images from random noise.
 
 Code: https://github.com/akxhbaby2506/Avatar-Generation-from-Real-Images   [Run the code here]
 
@@ -40,12 +39,13 @@ Generate and save avatar images:
 python generate_avatars.py
 This script loads the trained generator and generates multiple avatar images, saving them to the generated_images directory.
 
-Project Structure
+## Project Structure
 train.py: The main script for training the GAN.
 generate_sample.py: Script to generate a sample image using the trained generator.
 generate_avatars.py: Script to generate and save multiple avatar images.
 generator.pth: Trained generator model.
 generated_images/: Directory to store generated images.
 RandomNoiseDataset: Custom dataset class for generating random noise as input.
-Customization
+
+## Customization
 You can customize the GAN's hyperparameters, architecture, and dataset by modifying the code in train.py and other relevant files. Additionally, you can replace the RandomNoiseDataset with your own dataset for more specific image generation tasks.
