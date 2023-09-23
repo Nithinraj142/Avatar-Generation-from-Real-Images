@@ -27,16 +27,16 @@ pip install torch numpy matplotlib torchvision
 
 Train the GAN by running the following command:
 
-python train.py
+generator.py
 This will train the GAN for a specified number of epochs and save the trained generator model to generator.pth.
 
 Generate a sample image using the trained generator:
-python generate_sample.py
+python convertor.py
 This will generate and display a sample image created by the trained generator and save it as sample_generated_image.png.
 
 Generate and save avatar images:
 
-python generate_avatars.py
+python avatar.py
 This script loads the trained generator and generates multiple avatar images, saving them to the generated_images directory.
 
 ## Project Structure
@@ -48,4 +48,4 @@ generated_images/: Directory to store generated images.
 RandomNoiseDataset: Custom dataset class for generating random noise as input.
 
 ## Customization
-You can customize the GAN's hyperparameters, architecture, and dataset by modifying the code in train.py and other relevant files. Additionally, you can replace the RandomNoiseDataset with your own dataset for more specific image generation tasks.
+You can customize the GAN's hyperparameters, architecture, and dataset by modifying the code in realImg.py and other relevant files. Additionally, you can replace the Random-Noise-Dataset with your own dataset for more specific image generation tasks.
